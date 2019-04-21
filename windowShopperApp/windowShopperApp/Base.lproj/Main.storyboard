@@ -28,9 +28,11 @@
                                     <constraint firstAttribute="height" constant="60" id="aTq-5z-tK3"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wPM-pc-WH6" customClass="CurrencyTxtField" customModule="windowShopperApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="152" width="243" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wPM-pc-WH6" customClass="CurrencyTxtField" customModule="windowShopperApp" customModuleProvider="target">
+                                <rect key="frame" x="66" y="145" width="243" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="o0U-0V-UDK"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -39,11 +41,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wjD-eY-WOq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="2We-wX-kCP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wPM-pc-WH6" secondAttribute="trailing" constant="66" id="Dkq-Yc-9Zv"/>
                             <constraint firstItem="hPl-Vi-wav" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="F52-ty-5EW"/>
                             <constraint firstItem="hPl-Vi-wav" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GxG-QC-A55"/>
+                            <constraint firstItem="wPM-pc-WH6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="SuK-Og-H0e"/>
                             <constraint firstItem="hPl-Vi-wav" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VgZ-ln-pJV"/>
                             <constraint firstItem="hPl-Vi-wav" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="XO0-KV-TQP"/>
+                            <constraint firstItem="wPM-pc-WH6" firstAttribute="top" secondItem="wjD-eY-WOq" secondAttribute="bottom" constant="30" id="kfW-Ft-yt5"/>
                             <constraint firstItem="wjD-eY-WOq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uam-7y-7hn"/>
+                            <constraint firstAttribute="bottom" secondItem="hPl-Vi-wav" secondAttribute="bottom" id="wZy-my-qFV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
