@@ -29,30 +29,47 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wPM-pc-WH6" customClass="CurrencyTxtField" customModule="windowShopperApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="145" width="243" height="40"/>
+                                <rect key="frame" x="20" y="150" width="335" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="o0U-0V-UDK"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F5w-Y0-xor" customClass="CurrencyTxtField" customModule="windowShopperApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="215" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2Tj-DS-cwN"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wjD-eY-WOq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="2We-wX-kCP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wPM-pc-WH6" secondAttribute="trailing" constant="66" id="Dkq-Yc-9Zv"/>
                             <constraint firstItem="hPl-Vi-wav" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="F52-ty-5EW"/>
                             <constraint firstItem="hPl-Vi-wav" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GxG-QC-A55"/>
-                            <constraint firstItem="wPM-pc-WH6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="SuK-Og-H0e"/>
+                            <constraint firstItem="wPM-pc-WH6" firstAttribute="leading" secondItem="F5w-Y0-xor" secondAttribute="leading" id="MZc-Ul-MkK"/>
+                            <constraint firstItem="F5w-Y0-xor" firstAttribute="top" secondItem="wPM-pc-WH6" secondAttribute="bottom" constant="25" id="Oae-Hs-mDK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wPM-pc-WH6" secondAttribute="trailing" constant="20" id="SA6-Nt-ywo"/>
                             <constraint firstItem="hPl-Vi-wav" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VgZ-ln-pJV"/>
                             <constraint firstItem="hPl-Vi-wav" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="XO0-KV-TQP"/>
-                            <constraint firstItem="wPM-pc-WH6" firstAttribute="top" secondItem="wjD-eY-WOq" secondAttribute="bottom" constant="30" id="kfW-Ft-yt5"/>
+                            <constraint firstItem="F5w-Y0-xor" firstAttribute="height" secondItem="wPM-pc-WH6" secondAttribute="height" id="cQl-ta-iAd"/>
+                            <constraint firstItem="wPM-pc-WH6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="f7g-sr-LFG"/>
+                            <constraint firstItem="wPM-pc-WH6" firstAttribute="top" secondItem="wjD-eY-WOq" secondAttribute="bottom" constant="35" id="kfW-Ft-yt5"/>
+                            <constraint firstItem="wPM-pc-WH6" firstAttribute="trailing" secondItem="F5w-Y0-xor" secondAttribute="trailing" id="trr-oZ-ft3"/>
                             <constraint firstItem="wjD-eY-WOq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uam-7y-7hn"/>
                             <constraint firstAttribute="bottom" secondItem="hPl-Vi-wav" secondAttribute="bottom" id="wZy-my-qFV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="priceTxt" destination="F5w-Y0-xor" id="K2c-4O-exY"/>
+                        <outlet property="wageTxt" destination="wPM-pc-WH6" id="c4k-2r-mqo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
