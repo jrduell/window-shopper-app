@@ -21,14 +21,13 @@ class MainVC: UIViewController {
         calcBtn.setTitle("Calculate", for: .normal)
         calcBtn.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
         calcBtn.addTarget(self, action: #selector(MainVC.calculate), for: .touchUpInside)
+    }
+    
+    @objc func calculate() {
         
-        wageTxt.inputAccessoryView = calcBtn
-        priceTxt.inputAccessoryView = calcBtn
     }
 
-    @objc func calculate(){
-        print("We got here")
-    }
+    
 
 }
 
