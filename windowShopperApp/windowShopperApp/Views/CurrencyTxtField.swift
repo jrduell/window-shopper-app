@@ -14,14 +14,16 @@ class CurrencyTxtField: UITextField {
 
     override func prepareForInterfaceBuilder() {
         customizeView()
+        //prepareForInterfaceBuilder calls customizeView and allows programmatic changes made to show in the main storyboard
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
        
         customizeView()
+        //implements customize view to run on app and apply to the UITextField
     }
-
+//customizeView() must be called in both awakeFromNib and prepareForInterfaceBuilder
    
     
     func customizeView(){
